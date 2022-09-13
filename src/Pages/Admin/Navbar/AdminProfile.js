@@ -160,18 +160,28 @@ const AdminProfile = () => {
     }
   };
   return (
-    <div>
+    <div className='back-image-profile' >
         <AdminNav></AdminNav>
-<h2>Profile Details</h2>
-<h3>Name : {initialName}</h3>
-<div className='container-profile-image'>
+
+
+<div className='container-profile-image '>
 <img src = {initialProfile} alt = "profile" className='thumbnail profile-image'></img>
+
+</div>
+<div className='admin-profile-details'>
+<h3>Name : {initialName}</h3>
+<h4>Email: shruthi@gmail.com</h4>
+<h4>Phone-4321568700</h4>
+<h4>Currently Working-GlobalLogic</h4>
+<h4>Designation-HR</h4>
+<h4>Work Location-Bangalore</h4>
 </div>
 {/* <h3>Email: {initialEmail}</h3> */}
 {
     showUpdate?
 
-        <form>
+        <form className='admin-update-form'>
+          <h3>Update Form</h3>
   <div class="form-group">
     <label for="exampleInputEmail1">Name</label>
     <input type="string" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" onChange={(e)=>handleChange(e,'name')}/>
@@ -218,6 +228,9 @@ const AdminProfile = () => {
     <button type="submit" class="btn btn-primary" onClick={(e)=>setShowUpdate(true)}>Update</button>
 </div>
 }
+
+
+
       </div>
  
    

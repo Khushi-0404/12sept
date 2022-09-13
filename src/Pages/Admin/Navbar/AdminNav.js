@@ -23,12 +23,12 @@ const AdminNav=()=>{
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Link to='/admindashboard' style={{textDecoration: 'none', color:"white", margin:'0.5rem'}}><h4 className='nav-icon'>Home</h4></Link>
+            <Link to='/admindashboard' style={{textDecoration: 'none', color:"white", margin:'0.5rem'}}><h4 className='nav-icon'><i className='fa fa-home'></i></h4></Link>
             
             
             
             <Link to='/adminprofile' style={{textDecoration: 'none', color:"white", margin:'0.5rem'}}><h4 className='nav-icon'> Profile</h4></Link>
-            <i className='fa fa-sign-out 'style={{textDecoration: 'none', color:"white", margin:'0.5rem',marginLeft:"400%"}} onClick={logoutMethod} ><h4 className='nav-icon'>Logout</h4></i>
+            <i className='fa fa-sign-out 'style={{textDecoration: 'none', color:"white", margin:'0.5rem',marginLeft:"500%"}} onClick={logoutMethod} ><h4 className='nav-icon'>Logout</h4></i>
             {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
