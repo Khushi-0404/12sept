@@ -97,8 +97,9 @@ class PostNewJob extends Component {
 
   render() {
     return (
-      <div>
+      <div className="back-image">
         <AdminNav></AdminNav>
+        <h1 className='itemsHeader'>Add Job</h1>
       <div
         className="job-applied-wrapper table-responsive-sm"
         id="view-applicants"
@@ -234,7 +235,7 @@ class PostNewJob extends Component {
             <div className="form-group">
               <button
                 type="submit"
-                className="post-job-btn b-0 px-3 primary"
+                className="btn btn-primary"
               >
                 Post job
               </button>

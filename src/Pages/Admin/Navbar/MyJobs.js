@@ -33,7 +33,8 @@ const ViewJobPosted = () => {
     Navigate('/updatejobs', { id })
   }
   const handleJobDelete = (id) => {
-    alert("Inside Delete" + " " + id)
+    const newData= jobData.filter((item) => item._id !== id)
+    setJobData(newData)
   }
   const renderItem = (item, index) => {
     return (
@@ -82,9 +83,9 @@ const ViewJobPosted = () => {
   //   return <h2>LOADING....</h2>
   // }
   return (
-    <div>
+    <div className="back-image" >
       <AdminNav />
-      <h1 className='navbrand'>My Jobs</h1>
+      <h1 className='itemsHeader'>My Jobs</h1>
       <Link to='/addjobs'><ReactBootstrap.Button className="btn btn-primary mb-2" size="lg">Add New</ReactBootstrap.Button></Link>
       <div className="cardblockstyle">
         {

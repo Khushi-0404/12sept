@@ -52,3 +52,7 @@
 .navbrand:hover {
     text-shadow: 2px 2px 8px white;
 }
+.employee-div{
+    background-color: wheat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
