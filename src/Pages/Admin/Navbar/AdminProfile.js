@@ -110,7 +110,7 @@ const AdminProfile = () => {
             // localStorage.setItem('userId',res.data.userId);
             // localStorage.setItem('name',name)
             
-        })
+        }) 
         .catch((err)=>{
           alert('fail')
             console.log("err",err);
